@@ -7,11 +7,11 @@
     font-family: 'Courier New', Courier, monospace;
     background-color: #eeebeb;
     padding: 20px;
-    max-width: 350px;
+    max-width: 550px;
     margin: 0 auto;
     border-radius: 10px;
 }
-.input{
+input{
     width: 100%;
     box-sizing: border-box;
     padding: 12px 20px;
@@ -19,16 +19,80 @@
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+.custom-radio input{
+    display: none;
+}
+.custom-radio input + label::before{
+    content:'';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: 1px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+.custom-radio input:checked + label::before{
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg"%3E%3Ccircle r="50" cx="50" cy="50" fill="tomato"/%3E%3Ccircle r="41" cx="47" cy="50" fill="orange"/%3E%3Ccircle r="33" cx="48" cy="53" fill="gold"/%3E%3Ccircle r="25" cx="49" cy="51" fill="yellowgreen"/%3E%3Ccircle r="17" cx="52" cy="50" fill="lightseagreen"/%3E%3Ccircle r="9" cx="55" cy="48" fill="teal"/%3E%3C/svg%3E');
+    background-color:white;
+    background-position: center;
+    box-sizing: border-box;
+    border: 4px solid #4caf50;
+    padding: 4px;
+}
+.custom-checkbox input{
+    display: none;
+}
+.custom-checkbox input + label::before{
+    content:'';
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    background-color: #ccc;
+    border: 1px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+.custom-checkbox input:checked + label::before{
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg"%3E%3Ccircle r="50" cx="50" cy="50" fill="tomato"/%3E%3Ccircle r="41" cx="47" cy="50" fill="orange"/%3E%3Ccircle r="33" cx="48" cy="53" fill="gold"/%3E%3Ccircle r="25" cx="49" cy="51" fill="yellowgreen"/%3E%3Ccircle r="17" cx="52" cy="50" fill="lightseagreen"/%3E%3Ccircle r="9" cx="55" cy="48" fill="teal"/%3E%3C/svg%3E');
+    background-color: #4caf50;
+    background-position: center;
+    border: 1px solid;
+    padding: 0;
+
+}
+select{
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+.observacoes{
+    margin: 10px;
+        
+}
+textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+}
 .botao{
     background-color: #4caf50;
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 15px;
     border: 0;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
 }
-.botao:hover{
-    background-color: #45a049;
+botao:hover{
+    background-color: #4caf50;
 }
